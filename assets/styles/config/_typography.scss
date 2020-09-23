@@ -1,0 +1,38 @@
+/*======================================
+*               headers                *
+======================================*/
+.u-text-headers {
+  color: $base-black;
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+
+.u-text-h1 {
+  @extend .u-text-headers;
+  font-size: 60px;
+}
+
+.u-text-h2 {
+  @extend .u-text-headers;
+  font-size: 50px;
+}
+
+.u-text-h3 {
+  @extend .u-text-headers;
+  font-size: 40px;
+}
+
+.u-text-h2 {
+  @extend .u-text-headers;
+  font-size: 30px;
+}
+
+.u-text-h2 {
+  @extend .u-text-headers;
+  font-size: 24px;
+}
+
+.u-text-h2 {
+  @extend .u-text-headers;
+  font-size: 20px;
+}
