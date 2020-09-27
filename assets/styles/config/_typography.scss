@@ -1,38 +1,84 @@
 /*======================================
+*               config                 *
+======================================*/
+.u-text-general {
+  font-family: 'Open Sans', sans-serif;
+  color: $base-black;
+}
+
+/*======================================
 *               headers                *
 ======================================*/
 .u-text-headers {
-  color: $base-black;
+  @extend .u-text-general;
   font-weight: bold;
-  font-family: 'Open Sans';
 }
 
 .u-text-h1 {
   @extend .u-text-headers;
   font-size: 60px;
+  line-height: 80px;
+  // letter-spacing: 50px;
 }
 
 .u-text-h2 {
   @extend .u-text-headers;
   font-size: 50px;
+  line-height: 60px;
+  // letter-spacing: 15px;
 }
 
 .u-text-h3 {
   @extend .u-text-headers;
+  line-height: 50px;
   font-size: 40px;
+  // letter-spacing: 15px;
 }
 
-.u-text-h2 {
+.u-text-h4 {
   @extend .u-text-headers;
+  line-height: 40px;
   font-size: 30px;
 }
 
-.u-text-h2 {
+.u-text-h5 {
   @extend .u-text-headers;
+  line-height: 34px;
   font-size: 24px;
 }
 
-.u-text-h2 {
+.u-text-h6 {
   @extend .u-text-headers;
+  line-height: 30px;
   font-size: 20px;
+}
+
+/*======================================
+*               General                *
+======================================*/
+
+.u-text-body {
+  @extend .u-text-general;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.u-text-intro {
+  @extend .u-text-general;
+  line-height: 38px;
+  font-size: 24px;
+}
+
+.u-text-body--small {
+  @extend .u-text-general;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.u-text-special {
+  @extend .u-text-general;
+  line-height: 55px;
+  font-size: 40px;
+  font-style: italic;
+  color: $base-dark-red;
 }

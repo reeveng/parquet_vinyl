@@ -1,0 +1,32 @@
+.c-value {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration-color: $base-black;
+    color: $base-black;
+    text-decoration: underline;
+  }
+
+  .c-value__title {
+    margin-bottom: $marginBottom-title;
+    margin-top: $marginTop-title;
+  }
+
+  .c-value__content {
+    padding-bottom: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+.c-value__background {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  left: 0%;
+  background: $secondary-orange;
+  padding: 0;
+  z-index: -1000;
+  margin-top: -27.5rem;
+}

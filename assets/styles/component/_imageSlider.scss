@@ -1,0 +1,107 @@
+div#comparison {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+div#comparison figure {
+  background-image: url('../../../assets/images/slider.png');
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+div#comparison figure > img {
+  position: relative;
+  width: 100%;
+}
+
+div#comparison figure div {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../assets/images/slider.png');
+  background-size: cover;
+  position: absolute;
+  border-right: solid $base-white 4px;
+
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  top: -30vh;
+  left: -1%;
+  background-color: transparent;
+  width: 102%;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']:active {
+  outline: none;
+}
+
+input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  height: 15px;
+  width: 98%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  outline: none;
+}
+
+input[type='range']::active {
+  border: none;
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 58px;
+  height: 58px;
+  background: $base-black;
+  background: url('../../../assets/vectors/double-arrow.svg') no-repeat;
+  border-radius: 0;
+  border-radius: 50px;
+}
+
+input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 58px;
+  height: 58px;
+  opacity: 50%;
+  border-radius: 50px;
+}
+
+input[type='range']:focus::-webkit-slider-thumb {
+  opacity: 50%;
+}
+
+input[type='range']:focus::-moz-range-thumb {
+  opacity: 50%;
+}
+
+div#divisor__text {
+  @extend .u-text-h6;
+
+  padding: 1rem 2rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 212.5px;
+  background: white;
+  text-align: center;
+  margin-top: -27.5vh;
+  z-index: 10000;
+}

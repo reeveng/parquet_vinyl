@@ -1,9 +1,13 @@
 /*======================================
 *            import config             *
 ======================================*/
-@import './config/colors', './config/typography';
+@import './config/colors', './config/typography', './config/variables';
 
 /*======================================
 *           import component           *
 ======================================*/
-@import './component/btn';
+/*============= General ==============*/
+@import './component/btn', './component/imageSlider';
+
+/*============ Homepage ==============*/
+@import './component/_homepage/homepage';

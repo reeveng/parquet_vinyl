@@ -4,14 +4,17 @@
 $base-black: #131313;
 $base-dark-red: #92292e;
 $base-red: #cb2515;
+$base-white: #ffffff;
 
 /*======================================
 *           primary colors             *
 ======================================*/
-$primary-grey-l28: hsl(0, 0%, 28%);
-$primary-grey-l44: hsl(0, 0%, 44%);
-$primary-light-gray: hsl(240, 5%, 79%);
-$primary-white: hsl(240, 45%, 98%);
+$primary-grey-l18: hsl(0, 0%, 18%);
+$primary-grey-l28: rgb(71, 71, 71);
+$primary-grey-l29: rgb(74, 74, 74);
+$primary-grey-l44: #707070;
+$primary-light-gray: #c7c7cc;
+$primary-white: #f8f8fc;
 
 /*======================================
 *          secondary colors            *
@@ -21,4 +24,15 @@ $secondary-yellow: #fff39b;
 $secondary-light-yellow: #ebe9d5;
 $secondary-orange: #ffc683;
 $secondary-dark-brown: #523500;
+$secondary-white: #f7f7fc;
 $secondary-brown: #915207;
+
+/*======================================
+*             background               *
+======================================*/
+$background: $base-white;
+
+/*======================================
+*                other                 *
+======================================*/
+$btn-pressed-red: #b51c0d;

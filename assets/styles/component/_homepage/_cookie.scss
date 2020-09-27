@@ -1,0 +1,39 @@
+.modal {
+  z-index: 10000;
+}
+
+.modal-dialog {
+  @extend .u-text-body--small;
+
+  position: fixed;
+  right: 7rem;
+  bottom: 0;
+  width: 50%;
+  color: $base-black;
+
+  .modal-content {
+    border-radius: 6px;
+    padding: 1rem;
+
+    .modal-body {
+      .modal-message {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+
+    .btn {
+      @extend .u-text-body--small;
+      margin: 0;
+      width: 50%;
+    }
+  }
+}

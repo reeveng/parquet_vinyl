@@ -1,0 +1,35 @@
+.c-find__container {
+  .c-find__title {
+    margin-bottom: $marginBottom-title;
+    margin-top: $marginTop-title;
+  }
+
+  .c-find__background__general {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 80vh;
+    z-index: -1000;
+    margin-top: -5rem;
+  }
+
+  .c-find__background {
+    @extend .c-find__background__general;
+    width: 100%;
+    background: $secondary-light-yellow;
+  }
+
+  .c-find__background__circle {
+    @extend .c-find__background__general;
+    clip-path: ellipse(100% 30rem at bottom);
+    background: $background;
+  }
+
+  .c-find {
+    .c-find__content {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

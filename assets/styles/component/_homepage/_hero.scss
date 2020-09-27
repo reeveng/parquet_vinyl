@@ -1,0 +1,40 @@
+.c-hero {
+  animation: zoomOut 2s ease;
+
+  .c-hero__img {
+    max-width: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .c-hero__arrow {
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-top,
+    &-bottom {
+      position: absolute;
+    }
+
+    &-top {
+      z-index: 2000;
+      margin-top: -12px;
+    }
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0.98, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

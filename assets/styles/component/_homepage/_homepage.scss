@@ -1,0 +1,23 @@
+@import './hero', './nav', './news', './advantage', './footer', './value', './build', './find', './questions', './intro',
+  './cookie';
+
+main.c-body {
+  margin-top: 5rem;
+
+  .c-body__section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+#c-body__corner-icon {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  width: 84px;
+  height: 84px;
+  z-index: 5000;
+  &:hover {
+    cursor: pointer;
+  }
+}
