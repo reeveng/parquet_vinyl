@@ -208,7 +208,7 @@
 
 .c-btn.c-btn__transparent:enabled:hover span {
   width: 225%;
-  height: 600px;
+  height: 562.5px;
 }
 
 .c-btn.c-btn__transparent:enabled:focus {
@@ -572,10 +572,41 @@ div#divisor__text {
   }
 }
 
-.c-news {
+.c-news__container {
+  overflow: hidden;
+  position: relative;
+}
+
+.c-news__container .c-news {
   background-color: #add0ce;
   text-align: center;
   padding: 10px;
+  -webkit-animation: slideIn 7.5s ease;
+          animation: slideIn 7.5s ease;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    margin-left: -200%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: -200%;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  100% {
+    margin-right: -200%;
+  }
+}
+
+@keyframes slideOut {
+  100% {
+    margin-right: -200%;
+  }
 }
 
 .c-advantage {

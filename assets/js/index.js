@@ -32,3 +32,22 @@ window.onload = function () {
 };
 
 
+window.onload = () => {
+  let message = 0;
+  const newsMessages = ["[News] Lorem ipsum dolor sit amet, consectetur adipiscing elit 1", "[News] Lorem ipsum dolor sit amet, consectetur adipiscing elit 2", "[News] Lorem ipsum dolor sit amet, consectetur adipiscing elit 3"];
+  let news = document.getElementsByClassName("c-news")[0];
+  news.children[0].innerHTML = newsMessages[message];
+
+  news.addEventListener("animationend", () => {
+    setTimeout(() => {
+      news.style.animation = "slideOut 7.5s ease";
+      message = (message + 1) % newsMessages.length;
+      console.log(message)
+      setTimeout(() => {
+        news.children[0].innerHTML = newsMessages[message];
+        news.style.animation = "slideIn 7.5s ease"
+      }, 5000);
+    }, 5000);
+
+  })
+}

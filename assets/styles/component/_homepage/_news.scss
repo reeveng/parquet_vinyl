@@ -1,5 +1,22 @@
-.c-news {
-  background-color: $secondary-blue;
-  text-align: center;
-  padding: 10px;
+.c-news__container {
+  overflow: hidden;
+  position: relative;
+
+  .c-news {
+    background-color: $secondary-blue;
+    text-align: center;
+    padding: 10px;
+    animation: slideIn 7.5s ease;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: -200%;
+  }
+}
+@keyframes slideOut {
+  100% {
+    margin-right: -200%;
+  }
 }
